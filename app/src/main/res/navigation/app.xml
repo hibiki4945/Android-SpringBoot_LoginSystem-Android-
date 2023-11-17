@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/app"
+    app:startDestination="@id/loginFragment">
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.demo_06.ui.view.login.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_mainNavFragment"
+            app:destination="@id/mainNavFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainNavFragment"
+        android:name="com.example.demo_06.mainnav.MainNavFragment"
+        android:label="MainNavFragment" >
+        <action
+            android:id="@+id/action_mainNavFragment_to_otherFragment"
+            app:destination="@id/otherFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otherFragment"
+        android:name="com.example.mvvm_learning.setruth.mvvmlearn.ui.view.other.OtherFragment"
+        android:label="OtherFragment" />
+</navigation>
