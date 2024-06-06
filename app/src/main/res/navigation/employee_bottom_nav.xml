@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/employeeLeaveApplicationFragment">
+    <fragment
+        android:id="@+id/employeeLeaveApplicationFragment"
+        android:name="com.example.demo_06.mainnav.home.EmployeeLeaveApplicationFragment"
+        android:label="EmployeeLeaveApplicationFragment" >
+        <action
+            android:id="@+id/action_employeeLeaveApplicationFragment_to_employeeLeaveRecordFragment"
+            app:destination="@id/employeeLeaveRecordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/employeeLeaveRecordFragment"
+        android:name="com.example.demo_06.mainnav.home.EmployeeLeaveRecordFragment"
+        android:label="EmployeeLeaveRecordFragment" >
+        <action
+            android:id="@+id/action_employeeLeaveRecordFragment_to_calendarFragment2"
+            app:destination="@id/calendarFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/calendarFragment2"
+        android:name="com.example.demo_06.CalendarFragment"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar" />
+</navigation>

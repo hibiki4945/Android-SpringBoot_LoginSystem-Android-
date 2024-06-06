@@ -11,7 +11,7 @@ import androidx.viewbinding.ViewBinding
 import com.example.mvvm_learning.setruth.mvvmlearn.viewmodeled.PublicViewModel
 
 
-abstract class BaseFragment<VB: ViewBinding,VM:ViewModel>(
+abstract class BaseFragment<VB:ViewBinding,VM:ViewModel>(
     private val inflate:(LayoutInflater, ViewGroup?, Boolean)->VB,
     private val viewModelClass: Class<VM>?,
     private val publicViewModelTag: Boolean=false

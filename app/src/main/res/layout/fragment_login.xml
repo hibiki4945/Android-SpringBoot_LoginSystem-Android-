@@ -4,6 +4,23 @@
     android:gravity="center"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="社員番号："/>
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/account_input"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="パスワード："/>
+    <EditText
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:id="@+id/password_input"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

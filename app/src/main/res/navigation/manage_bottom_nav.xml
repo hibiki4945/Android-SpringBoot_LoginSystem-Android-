@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav"
+    app:startDestination="@id/manageLeaveReviewFragment">
+    <fragment
+        android:id="@+id/manageLeaveReviewFragment"
+        android:name="com.example.demo_06.mainnav.home.ManageLeaveReviewFragment"
+        android:label="ManageLeaveReviewFragment" >
+        <action
+            android:id="@+id/action_manageLeaveReviewFragment_to_manageLeaveApplicationFragment"
+            app:destination="@id/manageLeaveApplicationFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageLeaveApplicationFragment"
+        android:name="com.example.demo_06.mainnav.home.ManageLeaveApplicationFragment"
+        android:label="ManageLeaveApplicationFragment" >
+        <action
+            android:id="@+id/action_manageLeaveApplicationFragment_to_manageLeaveRecordFragment"
+            app:destination="@id/manageLeaveRecordFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageLeaveRecordFragment"
+        android:name="com.example.demo_06.mainnav.home.ManageLeaveRecordFragment"
+        android:label="ManageLeaveRecordFragment" >
+        <action
+            android:id="@+id/action_manageLeaveRecordFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.demo_06.CalendarFragment"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar" />
+</navigation>

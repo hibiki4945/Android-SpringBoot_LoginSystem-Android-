@@ -1,7 +1,9 @@
 package com.example.demo_06.ui.app
 
+import android.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import com.example.demo_06.R
 import com.example.demo_06.databinding.ActivityMainBinding
 
@@ -11,6 +13,8 @@ class MainActivity : AppCompatActivity() {
         ActivityMainBinding.inflate(layoutInflater).apply {
             setContentView(this.root)
 
+
         }
+
     }
 }

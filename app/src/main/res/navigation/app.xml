@@ -5,22 +5,29 @@
     app:startDestination="@id/loginFragment">
     <fragment
         android:id="@+id/loginFragment"
-        android:name="com.example.demo_06.ui.view.login.LoginFragment"
+        android:name="com.example.demo_06.ui.login.LoginFragment"
         android:label="LoginFragment" >
         <action
-            android:id="@+id/action_loginFragment_to_mainNavFragment"
-            app:destination="@id/mainNavFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/mainNavFragment"
-        android:name="com.example.demo_06.mainnav.MainNavFragment"
-        android:label="MainNavFragment" >
+            android:id="@+id/action_loginFragment_to_employeeNavFragment"
+            app:destination="@id/employeeNavFragment" />
         <action
-            android:id="@+id/action_mainNavFragment_to_otherFragment"
-            app:destination="@id/otherFragment" />
+            android:id="@+id/action_loginFragment_to_manageNavFragment"
+            app:destination="@id/manageNavFragment" />
     </fragment>
     <fragment
-        android:id="@+id/otherFragment"
-        android:name="com.example.mvvm_learning.setruth.mvvmlearn.ui.view.other.OtherFragment"
-        android:label="OtherFragment" />
+        android:id="@+id/employeeNavFragment"
+        android:name="com.example.demo_06.mainnav.EmployeeNavFragment"
+        android:label="EmployeeNavFragment" >
+        <action
+            android:id="@+id/action_employeeNavFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/manageNavFragment"
+        android:name="com.example.demo_06.mainnav.ManageNavFragment"
+        android:label="ManageNavFragment" >
+        <action
+            android:id="@+id/action_manageNavFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
 </navigation>
